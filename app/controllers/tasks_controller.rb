@@ -20,6 +20,7 @@ class TasksController < ApplicationController
     else
       flash.now[:danger] = 'Task が投稿されませんでした'
       render :new
+    end
   end
 
   def edit
@@ -46,4 +47,3 @@ class TasksController < ApplicationController
     redirect_to tasks_url
   end
   end
-end
